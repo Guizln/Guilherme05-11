@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">MeuSite</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>Bem-vindo ao <span class="destaque">meu site</span></h1>
+        <p>Uma página simples feita com HTML, CSS e JavaScript.</p>
+        <a href="#contato" class="btn">Fale comigo</a>
+        <p class="contador">Você já clicou <strong id="cliques">0</strong> vezes no botão abaixo.</p>
+        <button class="btn btn-outline" id="btnContador">Clique aqui</button>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p class="texto-centro">
+          Aqui você pode escrever uma breve apresentação sobre você, sua empresa ou seu projeto.
+          Troque este texto pelo que quiser.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicos" class="section alt">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="icone">🚀</div>
+            <h3>Rápido</h3>
+            <p>Páginas leves que carregam em um piscar de olhos.</p>
+          </article>
+          <article class="card">
+            <div class="icone">📱</div>
+            <h3>Responsivo</h3>
+            <p>Funciona bem no celular, tablet e computador.</p>
+          </article>
+          <article class="card">
+            <div class="icone">🎨</div>
+            <h3>Personalizável</h3>
+            <p>Fácil de mudar cores, textos e layout do seu jeito.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <form id="formContato" class="form" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+          <p id="feedback" class="feedback" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="ano"></span> MeuSite. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
